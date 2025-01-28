@@ -16,7 +16,7 @@ export function Cursor({ x, setIsDragging, setIsPlaying }: Props) {
         setIsPlaying(false)
       }
     }
-      className="absolute z-20 flex justify-center left-0 top-0 w-0.5 h-full bg-red-600"
+      className="absolute cursor-pointer z-20 flex justify-center left-0 top-0 w-0.5 h-full bg-red-600"
       style={{ transform: `translateX(${x}px)` }}
     >
       <div 

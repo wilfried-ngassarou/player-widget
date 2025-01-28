@@ -2,6 +2,7 @@ import { MouseEvent, useLayoutEffect, useRef, useState } from "react";
 import { bars } from "./constants/bars";
 import { Cursor } from "./components/cursor";
 import { PlayPauseButton } from "./components/play-pause-button";
+import { Credits } from "./components/credits";
 
 function App() {
   const [isPlaying, setIsPlaying] = useState(false) ;
@@ -53,10 +54,11 @@ function App() {
       onMouseUp={() => setIsDragging(false)} 
       className="w-full h-dvh flex justify-center items-center"
     >
+      <Credits />
       <section
-        className="h-16 p-1 flex items-center w-52 bg-gray-500 rounded-xl shadow-lg shadow-black/20"
+        className="h-16 p-1 flex items-center w-52 px-2 bg-gray-500 rounded-xl shadow-lg shadow-black/20"
       >
-        <div className="flex-grow h-full flex items-center justify-center">
+        <div className="flex-grow h-full flex items-center">
           <div
             style={{ boxShadow: 'inset 0px 0px 10px black' }}  
             className="h-11 w-11 p-0.5 bg-gray-800 rounded-full"
